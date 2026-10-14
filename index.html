@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="web_standard" name="shell-type">
+  <title>Maison &mdash; Silhouettes of Quiet Elegance | Haute Couture & Ready-to-Wear</title>
+  <meta name="description" content="Explore Maison: an uncompromising pursuit of texture, proportion, and timeless form. Quiet luxury outerwear, Mongolian cashmere, sartorial tailoring, and artisanal leather accessories.">
+  
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+      main > :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-tint": "#615e5c",
+            "background": "#faf9f7",
+            "surface": "#faf9f7",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary-container": "#94918d",
+            "inverse-surface": "#2f3130",
+            "primary-fixed": "#e7e1df",
+            "surface-container-highest": "#e3e2e0",
+            "primary-container": "#2c2a29",
+            "on-primary": "#ffffff",
+            "secondary": "#735c00",
+            "on-primary-fixed-variant": "#494645",
+            "surface-container-high": "#e9e8e6",
+            "outline-variant": "#cfc4be",
+            "secondary-fixed-dim": "#e9c349",
+            "tertiary-fixed-dim": "#cac6c1",
+            "on-error-container": "#93000a",
+            "on-tertiary-fixed": "#1d1b19",
+            "surface-bright": "#faf9f7",
+            "on-error": "#ffffff",
+            "inverse-primary": "#cac5c4",
+            "surface-variant": "#e3e2e0",
+            "on-secondary-container": "#745c00",
+            "on-secondary-fixed": "#241a00",
+            "primary-fixed-dim": "#cac5c4",
+            "on-tertiary": "#ffffff",
+            "on-primary-fixed": "#1d1b1a",
+            "tertiary": "#171613",
+            "on-secondary-fixed-variant": "#574500",
+            "tertiary-fixed": "#e7e2dd",
+            "error-container": "#ffdad6",
+            "surface-container": "#efeeec",
+            "on-primary-container": "#95918f",
+            "outline": "#7e7570",
+            "surface-container-low": "#f4f3f1",
+            "error": "#ba1a1a",
+            "on-surface-variant": "#4d4541",
+            "on-surface": "#1a1c1b",
+            "surface-dim": "#dadad8",
+            "on-background": "#1a1c1b",
+            "tertiary-container": "#2c2a27",
+            "inverse-on-surface": "#f1f1ef",
+            "secondary-container": "#fed65b",
+            "secondary-fixed": "#ffe088",
+            "on-tertiary-fixed-variant": "#494643",
+            "primary": "#171615",
+            "on-secondary": "#ffffff"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-xl": "8rem",
+            "space-lg": "4rem",
+            "space-md": "2rem",
+            "gutter": "2rem",
+            "margin": "3rem",
+            "space-sm": "1rem",
+            "space-xs": "0.5rem"
+          },
+          fontFamily: {
+            "body-sm": ["Inter", "sans-serif"],
+            "headline-xl-mobile": ["Playfair Display", "serif"],
+            "headline-xl": ["Playfair Display", "serif"],
+            "headline-md": ["Playfair Display", "serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "label-md": ["Inter", "sans-serif"],
+            "headline-lg-mobile": ["Playfair Display", "serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"]
+          },
+          fontSize: {
+            "body-sm": ["12px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "300" }],
+            "headline-xl-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "headline-xl": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "400" }],
+            "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "0em", fontWeight: "400" }],
+            "headline-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "0.02em", fontWeight: "400" }],
+            "label-md": ["11px", { lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "400" }],
+            "headline-lg-mobile": ["26px", { lineHeight: "32px", letterSpacing: "0em", fontWeight: "400" }],
+            "body-md": ["14px", { lineHeight: "22px", letterSpacing: "0.01em", fontWeight: "300" }],
+            "body-lg": ["16px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "300" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Google Fonts & Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:wght@100..900&display=swap" rel="stylesheet">
+  
+  <!-- Custom Micro-Interactions & Modals Stylesheet -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="bg-surface font-body text-on-surface antialiased">
+
+  <!-- ================= TOP LUXURY HEADER ================= -->
+  <header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] border-b border-outline-variant/30 transition-all duration-300">
+    <div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-space-sm group">
+        <img 
+          alt="Maison Logo" 
+          class="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaMQMvTkqu-xMGaqJf8R_KrneHQRU1j46Wvow5cYsvlGZPUb_0DrC0ENAbXdaZLf5wRS2u7tau_UPk5TQzF_HtDKmh9gO93kNLXRWzOQ32RV-bf_54RIAr3bt6iiEaSR26XuFsZsKxSUoSJ6loZ2OwLNjHIOA7BxrSakaCPPk60oap1wBKi_YZLtE8Iy_G9nQxEwYTw-M-O2wwxVgh9moOynQJemR8LBROiV8yiWtZIXOVx9WxaIeh"
+        >
+        <span class="font-headline-sm tracking-[0.25em] uppercase text-on-surface text-[17px]">Maison</span>
+      </a>
+
+      <!-- Primary Nav Menu -->
+      <nav class="hidden md:flex items-center gap-space-md" data-active-classes="font-bold text-on-surface">
+        <a aria-current="page" class="transition-colors font-bold text-on-surface" data-path="home" href="#">Home</a>
+        <a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="collections" href="#collections">Collections</a>
+        <a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="#shop">Shop</a>
+        <a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="editorial" href="#editorial">Editorial</a>
+        <a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#about">About</a>
+      </nav>
+
+      <!-- Action Items (Search, Wishlist, Bag, Account) -->
+      <div class="flex items-center gap-space-xs sm:gap-space-sm">
+        
+        <!-- Search Trigger -->
+        <button 
+          onclick="openSearch()"
+          class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors relative"
+          title="Search Collection"
+          aria-label="Open search dialog"
+        >
+          <span class="material-symbols-outlined text-[20px] block">search</span>
+        </button>
+
+        <!-- Wishlist Trigger with Badge -->
+        <button 
+          onclick="openWishlist()"
+          class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors relative"
+          title="Curated Wishlist"
+          aria-label="Open wishlist repertoire"
+        >
+          <span class="material-symbols-outlined text-[20px] block">favorite</span>
+          <span id="wishlistBadge" class="hidden absolute top-1 right-1 w-4 h-4 bg-primary text-on-primary text-[10px] font-medium rounded-full flex items-center justify-center font-label-md">
+            0
+          </span>
+        </button>
+
+        <!-- Shopping Bag Trigger with Badge -->
+        <button 
+          onclick="openCart()"
+          class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors relative"
+          title="Shopping Bag"
+          aria-label="Open atelier bag"
+        >
+          <span class="material-symbols-outlined text-[20px] block">shopping_bag</span>
+          <span id="cartBadge" class="hidden absolute top-1 right-1 w-4 h-4 bg-secondary text-on-secondary text-[10px] font-medium rounded-full flex items-center justify-center font-label-md">
+            0
+          </span>
+        </button>
+
+        <!-- Person / Client Account Trigger -->
+        <button 
+          onclick="openAccount()"
+          class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs hover:bg-surface-tint transition-colors shadow-sm"
+          title="Client Atelier Account"
+          aria-label="Open client account"
+        >
+          <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="w-full pt-20 bg-surface">
+    <div class="flex flex-col w-full bg-surface text-on-surface">
+
+      <!-- ================= IMMERSIVE HERO SECTION ================= -->
+      <section class="relative w-full h-[921px] min-h-[620px] flex items-center justify-center overflow-hidden -mt-20" id="home">
+        <div 
+          class="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-1000 scale-100 hover:scale-105" 
+          data-alt="High-fashion editorial photography of a model standing in a minimalist concrete architectural space during autumn twilight. The model wears an exquisite oversized cashmere coat in warm camel and bone tones, capturing quiet luxury. Soft diffused natural light, dramatic shadows, muted cinematic tones matching a sophisticated warm neutral palette." 
+          style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYqXk4jk-GHGzFEealKDY-Fgo-obwUzaS62CDCBJvO8z42cqBofhT_nBaWvbzjLKO8-4cdASYi1nDFUMImJPIGpVhZDKT3cCEhDnped34rIwdHK92Mf74Q53TU0YqNju353iUpesHCEt6lT-hKT-ekFsfvbAOl6OORLRUVrl8O9dvRgvY1dlRT9bRZ3lLYYaef6MBwaEtKYEd4CV40FJfelQLFs_SUwndFew3NPI3gR49yr1c1hLkd')"
+        ></div>
+        <div class="absolute inset-0 z-10 bg-primary/20 backdrop-brightness-90"></div>
+        <div class="relative z-20 text-center max-w-4xl mx-auto px-gutter flex flex-col items-center justify-end h-full pb-space-xl">
+          <span class="font-label-md text-on-primary tracking-[0.35em] uppercase mb-space-sm opacity-95 text-[12px]">The Autumn/Winter Collection</span>
+          <h1 class="font-headline-xl text-on-primary mb-space-md tracking-tight text-4xl sm:text-5xl md:text-6xl font-normal leading-tight">Silhouettes of Quiet Elegance</h1>
+          <div class="flex flex-col sm:flex-row gap-space-sm items-center">
+            <a 
+              class="px-space-md py-space-sm bg-on-primary text-primary font-label-md tracking-widest uppercase transition-all duration-300 hover:bg-secondary-container hover:text-on-secondary-container shadow-md" 
+              href="#shop"
+            >
+              Explore Collection
+            </a>
+            <a 
+              class="px-space-md py-space-sm border border-on-primary/70 text-on-primary backdrop-blur-sm font-label-md tracking-widest uppercase transition-all duration-300 hover:bg-on-primary/15" 
+              href="#editorial"
+            >
+              View Lookbook
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= BRAND MANIFESTO SECTION ================= -->
+      <section class="w-full py-space-xl px-gutter max-w-5xl mx-auto text-center" id="about">
+        <span class="font-label-md text-on-surface-variant tracking-[0.25em] uppercase mb-space-sm block text-[11px]">The Philosophy</span>
+        <h2 class="font-headline-lg text-on-surface mb-space-md max-w-2xl mx-auto leading-relaxed font-normal text-2xl sm:text-3xl md:text-4xl">
+          Garments crafted not merely to be worn, but to inhabit. An uncompromising pursuit of texture, proportion, and timeless form.
+        </h2>
+        <div class="w-12 h-[1px] bg-outline-variant mx-auto mb-space-md"></div>
+        <p class="font-body-lg text-on-surface-variant max-w-xl mx-auto font-light leading-relaxed">
+          Every piece is conceived in our atelier with meticulous attention to sustainable provenance, honoring the ancient crafts of weaving and tailoring while remaining resolutely modern.
+        </p>
+      </section>
+
+      <!-- ================= CURATED FEATURED CATEGORIES ================= -->
+      <section class="w-full py-space-lg px-gutter max-w-7xl mx-auto" id="collections">
+        <div class="flex justify-between items-end mb-space-lg">
+          <div>
+            <span class="font-label-md text-on-surface-variant tracking-[0.2em] uppercase block mb-space-xs text-[11px]">Curation</span>
+            <h2 class="font-headline-md text-on-surface font-normal">Featured Categories</h2>
+          </div>
+          <a 
+            class="font-body-sm text-on-surface hover:text-outline transition-colors uppercase tracking-widest flex items-center gap-space-xs" 
+            href="#shop"
+            onclick="resetFilters()"
+          >
+            All Categories <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+          
+          <!-- Category 01: Outerwear -->
+          <a 
+            class="group relative block aspect-[3/4] overflow-hidden bg-surface-container" 
+            href="#shop"
+            onclick="filterCategory('outerwear')"
+          >
+            <div 
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
+              data-alt="Sophisticated minimalist wool outerwear hanging against a textured plaster wall in muted beige tones, high fashion studio lighting, serene mood." 
+              style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5H8XhX5e0_rCc1QdyoRTGsMbONbi27TA4e1dZrytkPnKATF4RzgkhOuVL1X8jIwSvGp47h8885WWIQAQkYKr_mLUyaBl08lsRcsQszGm_k9lO6DNhShTM1KWQ42XSgZAVUtoU1PmunQyxa9zhd66ys-PNj_szeIcvP0RTjpDP2hsXamMorZQE9kwwHE7Gqnffwe2n3YKi86SG_KYP7rwtTaksfmG0uzdcS5ZS-hrp39_I_KmCgR-X')"
+            ></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-space-md flex flex-col items-start text-on-primary">
+              <span class="font-label-md tracking-[0.15em] uppercase mb-space-xs opacity-80 text-[10px]">Category 01</span>
+              <h3 class="font-headline-md font-normal">Outerwear</h3>
+            </div>
+          </a>
+
+          <!-- Category 02: Cashmere -->
+          <a 
+            class="group relative block aspect-[3/4] overflow-hidden bg-surface-container" 
+            href="#shop"
+            onclick="filterCategory('cashmere')"
+          >
+            <div 
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
+              data-alt="Close up shot of ultra-soft ribbed cashmere knitwear folded neatly on a warm wooden surface, emphasizing luxurious textures and cream colorways." 
+              style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYRDOH8wjTS2Sf8kJQRIGEn_jZAKeMJgELU4NsL4R5dpITz67wf2CP9ebVY_Ri726rjb8D3Vt3WE4sy2pLtPuIta5815P2wpDgjdQPbrLBGUmD-u5o9nGgDBShO1BhQno1jG2ElXDLgxUr6TTtqF_sEpo_yq3n4OlHYOOQsrQnQ7kB6VaHVlumZ-ZxyeVhPpK3zJzqBm1QKDmEWuoykR9PsSXdVPoNvH4VwyOsqxCfqZPSmotHLZkU')"
+            ></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-space-md flex flex-col items-start text-on-primary">
+              <span class="font-label-md tracking-[0.15em] uppercase mb-space-xs opacity-80 text-[10px]">Category 02</span>
+              <h3 class="font-headline-md font-normal">Cashmere</h3>
+            </div>
+          </a>
+
+          <!-- Category 03: Tailoring -->
+          <a 
+            class="group relative block aspect-[3/4] overflow-hidden bg-surface-container" 
+            href="#shop"
+            onclick="filterCategory('tailoring')"
+          >
+            <div 
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
+              data-alt="Tailored charcoal wool trousers and structured blazer draped impeccably over a minimalist chair, high-end editorial aesthetic, soft natural daylight." 
+              style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBAjwoK906JidDjun4c_0g-dSxBXdiAx-boxxeiYNoDm1cPotW8SDRPoVei5HUvBSmB9yAtSfXpcvH1SrulJ1bpV2DnYZV1h9riK-5jx95Uu-WeetEVb2w24dFa5VDZbvji4Ecam-Tx06xUpLC24Cb9Rs63xEfPzw1Cpujpxeoutaud2b2Xn1UyHMOh2cm0nDVtGoSpIb8qMthuspFJbhl2RH7RoUZMMB6JqYMc8dDTAFrsauG1cTeA')"
+            ></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-space-md flex flex-col items-start text-on-primary">
+              <span class="font-label-md tracking-[0.15em] uppercase mb-space-xs opacity-80 text-[10px]">Category 03</span>
+              <h3 class="font-headline-md font-normal">Tailoring</h3>
+            </div>
+          </a>
+
+          <!-- Category 04: Accessories -->
+          <a 
+            class="group relative block aspect-[3/4] overflow-hidden bg-surface-container" 
+            href="#shop"
+            onclick="filterCategory('accessories')"
+          >
+            <div 
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
+              data-alt="Atelier calfskin leather tote and sculpted accessories presented in serene architectural lighting." 
+              style="background-image: url('https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&auto=format&fit=crop&q=80')"
+            ></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-space-md flex flex-col items-start text-on-primary">
+              <span class="font-label-md tracking-[0.15em] uppercase mb-space-xs opacity-80 text-[10px]">Category 04</span>
+              <h3 class="font-headline-md font-normal">Accessories</h3>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- ================= INTERACTIVE SHOP / CATALOG SECTION ================= -->
+      <section class="w-full py-space-xl px-gutter max-w-7xl mx-auto scroll-mt-24" id="shop">
+        
+        <!-- Section Header with Filter Pills and Sort Bar -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-space-sm mb-space-lg pb-space-xs border-b border-outline-variant/40">
+          <div>
+            <span class="font-label-md text-on-surface-variant tracking-[0.2em] uppercase block mb-space-xs text-[11px]">The Repertoire</span>
+            <h2 class="font-headline-lg text-on-surface font-normal">Seasonal Silhouettes</h2>
+          </div>
+
+          <!-- Controls: Category Tabs & Sort Dropdown -->
+          <div class="flex flex-wrap items-center gap-space-xs w-full md:w-auto justify-between md:justify-end">
+            
+            <!-- Category Tabs -->
+            <div class="flex flex-wrap gap-1 p-1 bg-surface-container rounded-sm">
+              <button 
+                class="filter-tab-btn px-3 py-1.5 font-label-md text-[11px] uppercase tracking-wider transition-colors duration-200 bg-primary text-on-primary"
+                data-category="all"
+                onclick="filterCategory('all', this)"
+              >
+                All
+              </button>
+              <button 
+                class="filter-tab-btn px-3 py-1.5 font-label-md text-[11px] uppercase tracking-wider transition-colors duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface"
+                data-category="outerwear"
+                onclick="filterCategory('outerwear', this)"
+              >
+                Outerwear
+              </button>
+              <button 
+                class="filter-tab-btn px-3 py-1.5 font-label-md text-[11px] uppercase tracking-wider transition-colors duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface"
+                data-category="cashmere"
+                onclick="filterCategory('cashmere', this)"
+              >
+                Cashmere
+              </button>
+              <button 
+                class="filter-tab-btn px-3 py-1.5 font-label-md text-[11px] uppercase tracking-wider transition-colors duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface"
+                data-category="tailoring"
+                onclick="filterCategory('tailoring', this)"
+              >
+                Tailoring
+              </button>
+              <button 
+                class="filter-tab-btn px-3 py-1.5 font-label-md text-[11px] uppercase tracking-wider transition-colors duration-200 bg-surface-container text-on-surface-variant hover:text-on-surface"
+                data-category="accessories"
+                onclick="filterCategory('accessories', this)"
+              >
+                Accessories
+              </button>
+            </div>
+
+            <!-- Sort By Select -->
+            <div class="flex items-center gap-2">
+              <label for="sortSelect" class="font-label-md text-[11px] text-on-surface-variant uppercase tracking-widest hidden sm:inline">Sort:</label>
+              <select 
+                id="sortSelect" 
+                onchange="handleSortChange(this.value)"
+                class="bg-surface-container border-none py-1.5 px-3 text-on-surface font-label-md text-[11px] tracking-wider uppercase focus:ring-1 focus:ring-primary cursor-pointer outline-none"
+              >
+                <option value="featured">Featured Atelier</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name">Alphabetical</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Results Counter & Reset Link -->
+        <div class="flex justify-between items-center mb-space-md text-body-sm text-on-surface-variant">
+          <span id="productsCount" class="font-label-md tracking-wider uppercase text-[11px]">12 Silhouettes</span>
+          <span class="font-body-sm text-[12px] text-on-surface-variant">Complimentary white-glove delivery on orders over $1,500 USD</span>
+        </div>
+
+        <!-- Products Grid Container -->
+        <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-space-md">
+          <!-- Dynamically populated via js/app.js -->
+        </div>
+
+      </section>
+
+      <!-- ================= EDITORIAL LOOKBOOK GRID ================= -->
+      <section class="w-full py-space-xl px-gutter max-w-7xl mx-auto scroll-mt-20" id="editorial">
+        <div class="text-center max-w-2xl mx-auto mb-space-xl">
+          <span class="font-label-md text-on-surface-variant tracking-[0.2em] uppercase block mb-space-xs text-[11px]">Visual Narrative</span>
+          <h2 class="font-headline-lg text-on-surface font-normal">The Autumn Lookbook</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+          
+          <!-- Look 1 Image -->
+          <div class="md:col-span-7 aspect-[4/5] relative overflow-hidden bg-surface-container cursor-pointer group" onclick="openQuickView(1)">
+            <div 
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
+              data-alt="Full length editorial shot of a woman in an oversized structured herringbone coat walking down a quiet Parisian street during autumn leaves falling." 
+              style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDFu10-LuEP5GWuf6zh2_k5LGDmPOPH1f5J9DfSQs2E85FCsvpAng1cvLgd1N0yZR3HqXmtFhTM6U_UlQMwhOtw-if2ib9yl0f6lfZSgPCmjo1OArRr5qljXEkEmLQu-jLSENtYV5zQ8cvxeAB4pLA-fZzQ3lcUK42Rsml8iEwhGrP6I946J8vQB0yGA-sz6UKojRzkGY3pXUHTUC1f6vgat3oloFMnHf6cCl47RVGPKbME4kH-LGe4')"
+            ></div>
+            <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+          </div>
+
+          <!-- Look 1 Narrative -->
+          <div class="md:col-span-5 flex flex-col justify-center px-space-md">
+            <span class="font-label-md text-on-surface-variant tracking-[0.15em] uppercase mb-space-xs text-[11px]">Look 01 — Sequence</span>
+            <h3 class="font-headline-md mb-space-sm font-normal">The Structured Herringbone Overcoat</h3>
+            <p class="font-body-md text-on-surface-variant mb-space-md font-light leading-relaxed">
+              Engineered from heavyweight virgin wool, featuring raw edges and structured shoulders that create a striking silhouette against the softer tones of autumn.
+            </p>
+            <a 
+              id="look01Btn" 
+              class="font-label-md tracking-widest uppercase text-on-surface underline underline-offset-8 hover:text-outline transition-colors self-start cursor-pointer" 
+              href="#shop"
+            >
+              Discover Piece &rarr;
+            </a>
+          </div>
+
+          <!-- Look 2 Image -->
+          <div class="md:col-span-5 md:order-last aspect-[4/5] relative overflow-hidden bg-surface-container cursor-pointer group" onclick="openQuickView(2)">
+            <div 
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
+              data-alt="Editorial portrait of a man wearing a charcoal turtleneck sweater made from pure Mongolian cashmere, soft moody studio lighting against a dark neutral background." 
+              style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAskewplDpopVpQS31Ln6koEce-9RjXbuSnLKjtXTDCWJW_Hyfy8MD-QaU7d7h4QhXKlLaXPiHg0_-wR1EL8UI8_MXdvDzmX541WhQFcfsu2mduy7OhlkvNhGiVCHcmzKZ2yx--Ld7JRfHxaOf6TLpjnaKel26Tgim0o-C7sQanlYjk1yLUxF3cKdiGgcakjGEYP2oygoHVuKfQJEjqOo_RprvaxkijIBtwZszphCW_H102W4kfjFqT')"
+            ></div>
+            <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+          </div>
+
+          <!-- Look 2 Narrative -->
+          <div class="md:col-span-7 md:order-first flex flex-col justify-center px-space-md md:text-right items-end">
+            <span class="font-label-md text-on-surface-variant tracking-[0.15em] uppercase mb-space-xs text-[11px]">Look 02 — Sequence</span>
+            <h3 class="font-headline-md mb-space-sm font-normal">The Mongolian Turtleneck</h3>
+            <p class="font-body-md text-on-surface-variant mb-space-md font-light max-w-md leading-relaxed">
+              Knitted with 12-gauge double-ply cashmere yarn for an unmatched density and softness that provides effortless insulation with zero weight.
+            </p>
+            <a 
+              id="look02Btn" 
+              class="font-label-md tracking-widest uppercase text-on-surface underline underline-offset-8 hover:text-outline transition-colors cursor-pointer" 
+              href="#shop"
+            >
+              &larr; Discover Piece
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= NEWSLETTER / ATELIER INVITATION ================= -->
+      <section class="w-full bg-surface-container-low py-space-xl px-gutter border-t border-outline-variant/30">
+        <div class="max-w-xl mx-auto text-center flex flex-col items-center">
+          <span class="material-symbols-outlined text-[32px] text-on-surface-variant mb-space-sm" style="font-variation-settings: 'FILL' 0;">mail</span>
+          <h2 class="font-headline-md text-on-surface mb-space-xs font-normal">Join the Maison Correspondence</h2>
+          <p class="font-body-md text-on-surface-variant mb-space-md font-light">
+            Receive private invitations to seasonal collection previews, private atelier appointments, and editorial publications.
+          </p>
+          <form id="newsletterForm" class="w-full flex flex-col sm:flex-row gap-space-sm justify-center items-center">
+            <input 
+              class="bg-transparent border-b border-outline-variant py-space-xs px-space-sm w-full sm:w-80 text-on-surface font-body-md focus:outline-none focus:border-on-surface placeholder:text-on-surface-variant/50 transition-colors" 
+              placeholder="Enter your email address" 
+              required 
+              type="email"
+            >
+            <button 
+              class="px-space-md py-space-xs bg-primary text-on-primary font-label-md tracking-widest uppercase transition-all duration-300 hover:bg-surface-tint shadow-sm w-full sm:w-auto" 
+              type="submit"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ================= LUXURY FOOTER ================= -->
+  <footer class="w-full bg-surface-container-low py-space-lg border-t border-outline-variant/20">
+    <div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-space-md">
+      <div class="text-headline-sm font-headline tracking-widest uppercase text-on-surface">Maison</div>
+      <div class="flex flex-wrap justify-center gap-space-md text-body-sm text-on-surface-variant">
+        <a class="hover:text-on-surface transition-colors" href="#shop" onclick="openSizeGuide()">Client Care</a>
+        <a class="hover:text-on-surface transition-colors" href="#about">Sustainability</a>
+        <a class="hover:text-on-surface transition-colors" href="#about">Boutiques</a>
+        <a class="hover:text-on-surface transition-colors" href="#">Legal & Privacy</a>
+      </div>
+      <div class="text-body-sm text-on-surface-variant">
+        &copy; 2026 Maison. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= DRAWERS & MODALS ================= -->
+
+  <!-- 1. SHOPPING BAG (CART) DRAWER -->
+  <div id="cartDrawer" class="drawer-backdrop fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm flex justify-end" onclick="if(event.target === this) closeCart()">
+    <div class="drawer-panel w-full max-w-md bg-surface h-full flex flex-col shadow-2xl border-l border-outline-variant/40">
+      
+      <!-- Cart Header -->
+      <div class="p-space-sm border-b border-outline-variant/30 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="font-headline-sm text-on-surface text-[17px] font-normal tracking-wide">Your Shopping Bag</span>
+        </div>
+        <button onclick="closeCart()" class="p-1 text-on-surface-variant hover:text-on-surface transition-colors" aria-label="Close cart">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <!-- Shipping Progress Banner -->
+      <div class="px-space-sm py-2.5 bg-surface-container-low border-b border-outline-variant/20">
+        <div id="shippingProgressText" class="font-body-sm text-[11px] text-on-surface-variant mb-1 font-light">
+          Add <strong class="text-on-surface">$1,500 USD</strong> for complimentary courier delivery
+        </div>
+        <div class="w-full h-1 bg-surface-container overflow-hidden rounded-full">
+          <div id="shippingProgressBar" class="h-full bg-primary transition-all duration-500 w-0"></div>
+        </div>
+      </div>
+
+      <!-- Cart Items Scroll Area -->
+      <div id="cartItemsList" class="flex-1 overflow-y-auto">
+        <!-- Dynamically rendered via app.js -->
+      </div>
+
+      <!-- Cart Footer & Checkout -->
+      <div class="p-space-sm bg-surface-container-lowest border-t border-outline-variant/40">
+        
+        <!-- Complimentary Gift Wrap Checkbox -->
+        <label class="flex items-center gap-2 mb-3 cursor-pointer group">
+          <input type="checkbox" onchange="toggleGiftWrap()" class="accent-primary rounded-none w-3.5 h-3.5 cursor-pointer">
+          <span class="font-body-sm text-[11px] text-on-surface-variant group-hover:text-on-surface transition-colors font-light">
+            Include complimentary Maison signature linen gift wrapping & atelier card
+          </span>
+        </label>
+
+        <!-- Price Breakdown -->
+        <div class="space-y-1 mb-3 pt-2 border-t border-outline-variant/30 font-body-sm text-[12px]">
+          <div class="flex justify-between text-on-surface-variant font-light">
+            <span>Estimated Subtotal</span>
+            <span id="cartSubtotal" class="font-label-md text-on-surface">$0 USD</span>
+          </div>
+          <div class="flex justify-between text-on-surface-variant font-light">
+            <span>Signature Courier</span>
+            <span class="font-label-md text-on-surface">Calculated at Checkout</span>
+          </div>
+          <div class="flex justify-between text-on-surface font-headline-sm text-[15px] pt-1.5 border-t border-outline-variant/20 font-normal">
+            <span>Estimated Total</span>
+            <span id="cartTotal" class="font-label-md text-[15px]">$0 USD</span>
+          </div>
+        </div>
+
+        <!-- Checkout Button -->
+        <button 
+          id="proceedCheckoutBtn"
+          onclick="openCheckout()"
+          class="w-full py-space-xs bg-primary text-on-primary font-label-md tracking-[0.2em] uppercase transition-all duration-300 hover:bg-surface-tint shadow-sm text-[11px]"
+        >
+          Proceed to Private Checkout
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 2. WISHLIST DRAWER -->
+  <div id="wishlistDrawer" class="drawer-backdrop fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm flex justify-end" onclick="if(event.target === this) closeWishlist()">
+    <div class="drawer-panel w-full max-w-md bg-surface h-full flex flex-col shadow-2xl border-l border-outline-variant/40">
+      
+      <!-- Wishlist Header -->
+      <div class="p-space-sm border-b border-outline-variant/30 flex items-center justify-between">
+        <span class="font-headline-sm text-on-surface text-[17px] font-normal tracking-wide">Saved Repertoire</span>
+        <button onclick="closeWishlist()" class="p-1 text-on-surface-variant hover:text-on-surface transition-colors" aria-label="Close wishlist">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <!-- Wishlist Items -->
+      <div id="wishlistItemsList" class="flex-1 overflow-y-auto">
+        <!-- Dynamically rendered via app.js -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 3. QUICK VIEW MODAL -->
+  <div id="quickViewModal" class="modal-overlay fixed inset-0 z-50 bg-primary/50 backdrop-blur-sm flex items-center justify-center p-space-sm sm:p-space-md" onclick="if(event.target === this) closeQuickView()">
+    <div class="modal-content relative w-full max-w-4xl bg-surface shadow-2xl border border-outline-variant/40 overflow-hidden max-h-[92vh] flex flex-col">
+      
+      <!-- Close Button -->
+      <button onclick="closeQuickView()" class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+        <span class="material-symbols-outlined text-[18px]">close</span>
+      </button>
+
+      <!-- Modal Body -->
+      <div class="overflow-y-auto p-space-md">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+          <!-- Gallery on the left -->
+          <div id="qvGallery"></div>
+          <!-- Details on the right -->
+          <div id="qvDetails"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 4. SEARCH OVERLAY -->
+  <div id="searchOverlay" class="search-overlay fixed inset-0 z-50 bg-surface/95 backdrop-blur-2xl flex flex-col">
+    <div class="max-w-4xl w-full mx-auto px-gutter pt-space-lg flex-1 flex flex-col">
+      
+      <!-- Search Top Bar -->
+      <div class="flex items-center justify-between pb-space-sm border-b border-outline-variant">
+        <div class="flex items-center gap-space-sm flex-1">
+          <span class="material-symbols-outlined text-[24px] text-on-surface-variant">search</span>
+          <input 
+            id="searchOverlayInput"
+            type="text" 
+            placeholder="Search the atelier collection (e.g. Cashmere, Coat, Tailored Trousers, Silk)..."
+            class="w-full bg-transparent text-headline-sm text-on-surface font-light focus:outline-none placeholder:text-on-surface-variant/40"
+            oninput="handleLiveSearch(this.value)"
+          />
+        </div>
+        <button onclick="closeSearch()" class="p-2 text-on-surface-variant hover:text-on-surface transition-colors" aria-label="Close search">
+          <span class="material-symbols-outlined text-[24px]">close</span>
+        </button>
+      </div>
+
+      <!-- Quick Search Chips -->
+      <div class="py-space-sm flex flex-wrap gap-2 items-center">
+        <span class="font-label-md text-on-surface-variant text-[11px] uppercase tracking-wider">Suggested Curation:</span>
+        <button onclick="quickSearchTag('Cashmere')" class="px-2.5 py-1 bg-surface-container text-on-surface font-label-md text-[10px] tracking-wider uppercase hover:bg-surface-container-high transition-colors">Cashmere</button>
+        <button onclick="quickSearchTag('Coat')" class="px-2.5 py-1 bg-surface-container text-on-surface font-label-md text-[10px] tracking-wider uppercase hover:bg-surface-container-high transition-colors">Overcoats</button>
+        <button onclick="quickSearchTag('Trousers')" class="px-2.5 py-1 bg-surface-container text-on-surface font-label-md text-[10px] tracking-wider uppercase hover:bg-surface-container-high transition-colors">Tailored Trousers</button>
+        <button onclick="quickSearchTag('Silk')" class="px-2.5 py-1 bg-surface-container text-on-surface font-label-md text-[10px] tracking-wider uppercase hover:bg-surface-container-high transition-colors">Silk Twill</button>
+        <button onclick="quickSearchTag('Calfskin')" class="px-2.5 py-1 bg-surface-container text-on-surface font-label-md text-[10px] tracking-wider uppercase hover:bg-surface-container-high transition-colors">Archival Leather</button>
+      </div>
+
+      <!-- Search Results Area -->
+      <div id="searchOverlayResults" class="flex-1 overflow-y-auto pb-space-lg">
+        <div class="text-center py-12 text-on-surface-variant font-light font-body-md">
+          Begin typing to explore garments, textiles, and archival silhouettes...
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 5. CHECKOUT MODAL -->
+  <div id="checkoutModal" class="modal-overlay fixed inset-0 z-50 bg-primary/60 backdrop-blur-md flex items-center justify-center p-space-sm sm:p-space-md" onclick="if(event.target === this) closeCheckout()">
+    <div class="modal-content relative w-full max-w-xl bg-surface shadow-2xl border border-outline-variant/40 overflow-hidden max-h-[92vh] flex flex-col">
+      
+      <!-- Modal Header -->
+      <div class="p-space-sm border-b border-outline-variant/30 flex items-center justify-between">
+        <span class="font-headline-sm text-on-surface font-normal">Private Atelier Checkout</span>
+        <button onclick="closeCheckout()" class="p-1 text-on-surface-variant hover:text-on-surface transition-colors">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <!-- Checkout Content Area -->
+      <div id="checkoutContentArea" class="overflow-y-auto p-space-md">
+        
+        <!-- Order Summary Box -->
+        <div class="mb-space-md bg-surface-container-low p-space-sm rounded-sm">
+          <div class="font-label-md text-on-surface uppercase tracking-wider text-[11px] mb-2">Selected Silhouettes</div>
+          <div id="checkoutOrderSummary"></div>
+        </div>
+
+        <!-- Form -->
+        <form onsubmit="submitCheckout(event)" class="space-y-space-sm">
+          
+          <div class="grid grid-cols-2 gap-space-xs">
+            <div>
+              <label class="block font-label-md text-on-surface-variant uppercase tracking-wider text-[10px] mb-1">First Name</label>
+              <input type="text" required placeholder="Eleanor" class="w-full bg-surface-container-lowest border border-outline-variant/60 py-1.5 px-space-xs text-body-md focus:border-primary outline-none">
+            </div>
+            <div>
+              <label class="block font-label-md text-on-surface-variant uppercase tracking-wider text-[10px] mb-1">Last Name</label>
+              <input type="text" required placeholder="Vance" class="w-full bg-surface-container-lowest border border-outline-variant/60 py-1.5 px-space-xs text-body-md focus:border-primary outline-none">
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-label-md text-on-surface-variant uppercase tracking-wider text-[10px] mb-1">Email Correspondence</label>
+            <input type="email" required placeholder="eleanor.vance@maison.com" class="w-full bg-surface-container-lowest border border-outline-variant/60 py-1.5 px-space-xs text-body-md focus:border-primary outline-none">
+          </div>
+
+          <div>
+            <label class="block font-label-md text-on-surface-variant uppercase tracking-wider text-[10px] mb-1">Courier Delivery Address</label>
+            <input type="text" required placeholder="75008 Rue du Faubourg Saint-Honoré, Paris" class="w-full bg-surface-container-lowest border border-outline-variant/60 py-1.5 px-space-xs text-body-md focus:border-primary outline-none">
+          </div>
+
+          <div>
+            <label class="block font-label-md text-on-surface-variant uppercase tracking-wider text-[10px] mb-1">Discreet Payment Method</label>
+            <div class="grid grid-cols-3 gap-2">
+              <label class="border border-outline-variant p-2 flex flex-col items-center justify-center cursor-pointer hover:border-primary transition-colors text-center">
+                <input type="radio" name="paymentMethod" checked class="accent-primary mb-1">
+                <span class="font-label-md text-[10px] uppercase tracking-wider">Credit Card</span>
+              </label>
+              <label class="border border-outline-variant p-2 flex flex-col items-center justify-center cursor-pointer hover:border-primary transition-colors text-center">
+                <input type="radio" name="paymentMethod" class="accent-primary mb-1">
+                <span class="font-label-md text-[10px] uppercase tracking-wider">Apple Pay</span>
+              </label>
+              <label class="border border-outline-variant p-2 flex flex-col items-center justify-center cursor-pointer hover:border-primary transition-colors text-center">
+                <input type="radio" name="paymentMethod" class="accent-primary mb-1">
+                <span class="font-label-md text-[10px] uppercase tracking-wider">Atelier Wire</span>
+              </label>
+            </div>
+          </div>
+
+          <button 
+            type="submit" 
+            class="w-full py-space-sm bg-primary text-on-primary font-label-md tracking-[0.2em] uppercase transition-all duration-300 hover:bg-surface-tint shadow-md mt-space-md text-[11px]"
+          >
+            Authorize Purchase & Request Dispatch
+          </button>
+        </form>
+
+      </div>
+
+      <!-- Confirmation Screen Area (Hidden by default) -->
+      <div id="checkoutConfirmationArea" class="hidden p-space-xl text-center flex flex-col items-center justify-center my-auto">
+        <span class="material-symbols-outlined text-[54px] text-secondary mb-space-xs block">check_circle</span>
+        <span class="font-label-md text-on-surface-variant uppercase tracking-[0.3em] text-[10px] mb-1">Order Authorized</span>
+        <h3 class="font-headline-lg text-on-surface mb-space-xs font-normal">Thank You for Inhabiting Maison</h3>
+        <p class="font-body-md text-on-surface-variant max-w-sm mb-space-md font-light">
+          Your order has been registered in our atelier system. Our courier concierge will transmit tracking credentials and dispatch estimates to your correspondence shortly.
+        </p>
+        <button 
+          onclick="resetCheckoutModal()" 
+          class="px-space-md py-space-xs bg-primary text-on-primary font-label-md tracking-widest uppercase transition-all hover:bg-surface-tint"
+        >
+          Return to Atelier
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 6. CLIENT ACCOUNT DRAWER -->
+  <div id="accountDrawer" class="drawer-backdrop fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm flex justify-end" onclick="if(event.target === this) closeAccount()">
+    <div class="drawer-panel w-full max-w-md bg-surface h-full flex flex-col shadow-2xl border-l border-outline-variant/40">
+      
+      <!-- Account Header -->
+      <div class="p-space-sm border-b border-outline-variant/30 flex items-center justify-between">
+        <span class="font-headline-sm text-on-surface text-[17px] font-normal tracking-wide">Client Atelier Services</span>
+        <button onclick="closeAccount()" class="p-1 text-on-surface-variant hover:text-on-surface transition-colors">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <!-- Account Details -->
+      <div class="p-space-md flex-1 overflow-y-auto space-y-space-md">
+        <div class="text-center py-4 bg-surface-container-low rounded-sm">
+          <div class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center mx-auto mb-2 font-headline-md">
+            M
+          </div>
+          <h4 class="font-headline-sm text-on-surface font-normal">Maison Private Client</h4>
+          <span class="font-label-md text-on-surface-variant uppercase tracking-widest text-[10px]">Tier: Tier I &bull; Archival Repertoire</span>
+        </div>
+
+        <div class="space-y-2 font-label-md text-[11px] uppercase tracking-wider text-on-surface">
+          <button onclick="closeAccount(); openWishlist()" class="w-full p-space-sm bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between text-left">
+            <span>Saved Wardrobe Pieces</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </button>
+          <button onclick="closeAccount(); openCart()" class="w-full p-space-sm bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between text-left">
+            <span>Active Bag & Concierge</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </button>
+          <button onclick="openSizeGuide()" class="w-full p-space-sm bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between text-left">
+            <span>Bespoke Measurement Profile</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </button>
+          <button onclick="showToast('Concierge Notified', 'An atelier representative will connect with you shortly.', 'person')" class="w-full p-space-sm bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between text-left">
+            <span>Book Private Atelier Appointment</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 7. SIZE & FIT GUIDE MODAL -->
+  <div id="sizeGuideModal" class="modal-overlay fixed inset-0 z-50 bg-primary/60 backdrop-blur-md flex items-center justify-center p-space-sm sm:p-space-md" onclick="if(event.target === this) closeSizeGuide()">
+    <div class="modal-content relative w-full max-w-lg bg-surface shadow-2xl border border-outline-variant/40 overflow-hidden max-h-[90vh] flex flex-col p-space-md">
+      <div class="flex justify-between items-center mb-space-sm border-b border-outline-variant/30 pb-2">
+        <h4 class="font-headline-sm text-on-surface font-normal">Maison Size & Fit Matrix</h4>
+        <button onclick="closeSizeGuide()" class="text-on-surface-variant hover:text-on-surface">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+      <div class="overflow-y-auto">
+        <p class="font-body-sm text-on-surface-variant mb-3 font-light">All Maison garments are tailored following European standard sizing with an intentionally relaxed drape.</p>
+        <table class="w-full text-left font-body-sm text-[12px] border-collapse mb-space-md">
+          <thead>
+            <tr class="border-b border-outline-variant text-on-surface font-medium font-label-md uppercase text-[10px] tracking-wider">
+              <th class="py-2">FR</th>
+              <th class="py-2">IT</th>
+              <th class="py-2">US</th>
+              <th class="py-2">Bust (cm)</th>
+              <th class="py-2">Waist (cm)</th>
+            </tr>
+          </thead>
+          <tbody class="text-on-surface-variant font-light divide-y divide-outline-variant/30">
+            <tr><td class="py-2">36</td><td>40</td><td>2 - 4</td><td>82 - 85</td><td>64 - 67</td></tr>
+            <tr><td class="py-2">38</td><td>42</td><td>4 - 6</td><td>86 - 89</td><td>68 - 71</td></tr>
+            <tr><td class="py-2">40</td><td>44</td><td>6 - 8</td><td>90 - 93</td><td>72 - 75</td></tr>
+            <tr><td class="py-2">42</td><td>46</td><td>8 - 10</td><td>94 - 98</td><td>76 - 80</td></tr>
+          </tbody>
+        </table>
+        <div class="p-space-xs bg-surface-container text-[11px] text-on-surface-variant font-light">
+          Need custom alterations? Complimentary atelier hemming is offered for all tailored trousers upon request at checkout.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. TOAST NOTIFICATIONS CONTAINER -->
+  <div id="toastContainer" class="toast-container fixed bottom-6 right-6 z-50 flex flex-col gap-2"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
